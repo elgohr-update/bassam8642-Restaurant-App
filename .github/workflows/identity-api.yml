@@ -3,14 +3,16 @@ name: identity-api
 on:
   push:
     branches:
-    - develop
+      - develop
     paths:
-    - './src/backend/services/order.api/**'
+      - 'src/backend/services/order.api/**'
+      - '.github/workflows/identity-api.yml'
   pull_request:
     branches:
-    - develop
+      - develop
     paths:
-    - './src/backend/services/identity.api/**'
+      - 'src/backend/services/identity.api/**'
+      - '.github/workflows/identity-api.yml'
 
 jobs:
   build-and-test:
